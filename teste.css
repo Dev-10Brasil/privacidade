@@ -6,7 +6,7 @@
 body {
     padding-left: 10%;
     padding-right: 10%;
-    background-image: linear-gradient(to bottom right,rgba(0, 0, 0, 0.97) 0%, rgb(20, 20, 20, 0.97) 100%), url("logo.png");
+    background-image: linear-gradient(to bottom right,rgba(0, 0, 0, 0.97) 0%, rgb(20, 20, 20, 0.93) 100%), url("logo.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -16,38 +16,22 @@ body {
 }
 
 #sumario {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+    padding-left: 10px;
+    border: 1px solid white;
+    border-radius: 45px;
     width: 120px;
-    margin-top: -10px;
     margin-left: -28px;
-    float: left;
     position: fixed;
+    
 }
 
 #navSumario {
-    height: 85vh;
+    height: 25vh;
     overflow-y: auto;
     scrollbar-width: 20px;
-    display: flex;
-}
-
-@media screen and (max-height: 400px){
-
-    #navSumario {
-        height: 80vh;
-        overflow-y: auto;
-        scrollbar-width: 20px;
-    }
-
-}
-
-@media screen and (max-height: 200px){
-
-    #navSumario {
-        height: 75vh;
-        overflow-y: auto;
-        scrollbar-width: 20px;
-    }
-
+    min-height: 132px;
 }
 
 #navSumario::-webkit-scrollbar {
@@ -63,12 +47,6 @@ body {
     list-style: none;
     margin-left: 10px;
     font-size: 16px;
-}
-
-.art, .obg, .inc {
-    list-style: none;
-    margin-left: 20px;
-    font-size: 13px;
 }
 
 #navSumario a:link, #navSumario a:visited {
@@ -141,4 +119,9 @@ body {
 #rodapeT3 {
     margin: 60px;
     text-align: center;
+}
+
+#liAceito:link, #liAceito:visited {
+    text-decoration: none;
+    color: rgba(0, 255, 255);
 }
