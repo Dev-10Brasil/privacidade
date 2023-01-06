@@ -6,21 +6,95 @@
 body {
     padding-left: 10%;
     padding-right: 10%;
-    background-image: linear-gradient(rgba(255,255,255,.6) 0%, rgba(255, 255, 255, .6) 100%), url("logo.png");
+    background-image: linear-gradient(to bottom right,rgba(0, 0, 0, 0.97) 0%, rgb(20, 20, 20, 0.97) 100%), url("logo.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100vh;
+    background-size: 100%;
     background-position-x: center;
+    color: aliceblue;
+    font-family: 'Noto Sans';
 }
 
-#indiceLateral {
+#sumario {
+    width: 120px;
+    margin-top: -10px;
+    margin-left: -28px;
     float: left;
+    position: fixed;
+}
+
+#navSumario {
+    height: 85vh;
+    overflow-y: auto;
+    scrollbar-width: 20px;
+    display: flex;
+}
+
+@media screen and (max-height: 400px){
+
+    #navSumario {
+        height: 80vh;
+        overflow-y: auto;
+        scrollbar-width: 20px;
+    }
+
+}
+
+@media screen and (max-height: 200px){
+
+    #navSumario {
+        height: 75vh;
+        overflow-y: auto;
+        scrollbar-width: 20px;
+    }
+
+}
+
+#navSumario::-webkit-scrollbar {
+    background-color: antiquewhite;
+    width: 4px;
+}
+
+#navSumario::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+.itemSumario {
+    list-style: none;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.art {
+    list-style: none;
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.obg {
+    list-style: none;
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+#navSumario a:link, #navSumario a:visited {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#corpo {
+    margin-left: 25%;
 }
 
 .cabecalho {
     margin: auto;
     margin-top: 40px;
     text-align: center;
+}
+
+#logoCabecalho {
+    align-self: center;
+    width: 75%;
 }
 
 .conteudo {
