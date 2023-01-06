@@ -12,7 +12,7 @@ body {
     background-size: 100%;
     background-position-x: center;
     color: aliceblue;
-    font-family: 'Noto Sans';
+    font-family: 'Roboto', sans-serif;
 }
 
 #sumario {
@@ -94,7 +94,7 @@ body {
 
 #logoCabecalho {
     align-self: center;
-    width: 75%;
+    width: 56%;
 }
 
 .conteudo {
