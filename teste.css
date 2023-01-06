@@ -65,13 +65,7 @@ body {
     font-size: 16px;
 }
 
-.art {
-    list-style: none;
-    margin-left: 20px;
-    font-size: 13px;
-}
-
-.obg {
+.art, .obg, .inc {
     list-style: none;
     margin-left: 20px;
     font-size: 13px;
