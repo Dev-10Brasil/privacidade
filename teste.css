@@ -45,6 +45,17 @@ body {
     color: aliceblue;
 }
 
+/*---------------- Barra Scroll do Sumário ----------------*/
+#sumario::-webkit-scrollbar, #navSumario::-webkit-scrollbar {
+    background-color: antiquewhite;
+    width: 5px;
+}
+
+#sumario::-webkit-scrollbar-thumb, #navSumario::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+/*---------------- Configurações do sumário para tamanhos diferentes de tela ----------------*/
 @media screen and (max-width: 600px) {
     
     #sumario {
@@ -76,7 +87,7 @@ body {
 @media screen and (max-height: 300px) {
     
     #sumario {
-        margin-top: -2%;
+        margin-top: -3%;
     }
 
     #navSumario {
@@ -88,7 +99,7 @@ body {
 @media screen and (max-height: 194px) {
     
     #sumario {
-        margin-top: -3%;
+        margin-top: -4%;
     }
 
     #navSumario {
@@ -100,13 +111,12 @@ body {
 @media screen and (max-height: 130px) {
     
     #sumario {
-        margin-top: -3%;
-        overflow-y: auto;
+        margin-top: -5%;
+        overflow-y: scroll;
     }
 
     #navSumario {
-        overflow-y: unset;
-        height: 10vh;
+        overflow: unset;
     }
 
 }
@@ -123,16 +133,6 @@ body {
         overflow-y: unset;
     }
 
-}
-
-/*---------------- Barra Scroll do Sumário ----------------*/
-#sumario::-webkit-scrollbar, #navSumario::-webkit-scrollbar {
-    background-color: antiquewhite;
-    width: 5px;
-}
-
-#sumario::-webkit-scrollbar-thumb, #navSumario::-webkit-scrollbar-thumb {
-    background-color: gray;
 }
 
 /*---------------- Conteúdo do Sumário ----------------*/
