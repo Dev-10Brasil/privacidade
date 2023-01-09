@@ -225,8 +225,3 @@ body {
     margin: 40px;
     text-align: center;
 }
-
-#liAceito:link, #liAceito:visited {
-    text-decoration: none;
-    color: rgba(0, 255, 255);
-}
