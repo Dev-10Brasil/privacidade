@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/*---------------- Corpo da página ----------------*/
 body {
     padding-left: 10%;
     padding-right: 10%;
@@ -15,38 +16,22 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/*---------------- Corpo do Sumário ----------------*/
 #sumario {
-    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: -5vw;
     padding-top: 30px;
     padding-left: 10px;
     border: 1px solid white;
     border-radius: 45px;
     width: 120px;
-    margin-left: -28px;
+    background-color: rgba(255, 255, 255, 0.1);
     position: fixed;
-    
 }
 
 #navSumario {
-    height: 25vh;
+    height: 310px;
     overflow-y: auto;
     scrollbar-width: 20px;
-    min-height: 132px;
-}
-
-#navSumario::-webkit-scrollbar {
-    background-color: antiquewhite;
-    width: 4px;
-}
-
-#navSumario::-webkit-scrollbar-thumb {
-    background-color: gray;
-}
-
-.itemSumario {
-    list-style: none;
-    margin-left: 10px;
-    font-size: 16px;
 }
 
 #navSumario a:link, #navSumario a:visited {
@@ -54,10 +39,121 @@ body {
     color: aliceblue;
 }
 
+@media screen and (max-width: 600px) {
+    
+    #sumario {
+        margin-left: -7.5vw;
+    }
+
+}
+
+@media screen and (max-width: 486px) {
+    
+    #sumario {
+        margin-left: -10vw;
+    }
+
+}
+
+@media screen and (max-height: 450px) {
+    
+    #sumario {
+        margin-top: -1%;
+    }
+
+    #navSumario {
+        height: 70vh;
+    }
+
+}
+
+@media screen and (max-height: 300px) {
+    
+    #sumario {
+        margin-top: -2%;
+    }
+
+    #navSumario {
+        height: 60vh;
+    }
+
+}
+
+@media screen and (max-height: 194px) {
+    
+    #sumario {
+        margin-top: -3%;
+    }
+
+    #navSumario {
+        height: 40vh;
+    }
+
+}
+
+@media screen and (max-height: 130px) {
+    
+    #sumario {
+        margin-top: -3%;
+        overflow-y: auto;
+    }
+
+    #navSumario {
+        overflow-y: unset;
+        height: 10vh;
+    }
+
+}
+
+@media screen and (max-height: 100px) {
+    
+    #sumario {
+        margin-top: -5%;
+        overflow-y: auto;
+        height: 50vh;
+    }
+
+    #navSumario {
+        overflow-y: unset;
+    }
+
+}
+
+/*---------------- Barra Scroll do Sumário ----------------*/
+#sumario::-webkit-scrollbar, #navSumario::-webkit-scrollbar {
+    background-color: antiquewhite;
+    width: 5px;
+}
+
+#sumario::-webkit-scrollbar-thumb, #navSumario::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+/*---------------- Conteúdo do Sumário ----------------*/
+#tituloSumario {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.itemSumario {
+    list-style: none;
+    width: 92%;
+    height: 32px;
+    padding-top: 10px;
+    border-top: 5px solid rgba(255, 255, 255, 0.1);
+    font-size: 18px;
+}
+
+.itemSumario:hover {
+    background-color: rgba(255, 165, 0, 0.5);
+}
+
+/*---------------- Corpo do Documento ----------------*/
 #corpo {
     margin-left: 25%;
 }
 
+/*---------------- Cabecalho do documento ----------------*/
 .cabecalho {
     margin: auto;
     margin-top: 40px;
@@ -69,12 +165,14 @@ body {
     width: 56%;
 }
 
+/*---------------- Conteúdo do Documento ----------------*/
 .conteudo {
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
 }
 
+/*---------------- Sessões do Documento ----------------*/
 #introducao {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -99,6 +197,7 @@ body {
     text-align: justify;
 }
 
+/*---------------- Termo de Concordância ----------------*/
 .rodape {
     margin-left: 5%;
     margin-right: 5%;
@@ -117,7 +216,7 @@ body {
 }
 
 #rodapeT3 {
-    margin: 60px;
+    margin: 40px;
     text-align: center;
 }
 
