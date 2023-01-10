@@ -5,39 +5,47 @@
 
 /*---------------- Corpo da página ----------------*/
 body {
-    padding-left: 10%;
-    padding-right: 10%;
-    background-image: linear-gradient(to bottom right,rgba(0, 0, 0, 0.97) 0%, rgb(20, 20, 20, 0.93) 100%), url("logo.png");
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-image: linear-gradient(to bottom right,rgba(0, 0, 0, 0.5) 0%, rgb(0, 0, 0, 0.5) 100%), url("logo.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
     background-position-x: center;
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
 }
 
 /*---------------- Corpo do Sumário ----------------*/
 #sumario {
-    margin-left: -5vw;
-    padding-top: 30px;
+    margin-left: -8vw;
+    margin-top: 30vh;
+    padding-top: 4vh;
     padding-left: 1.5vw;
     padding-right: 1vw;
     border: 1px solid white;
     border-radius: 20px;
     width: 8vw;
     min-width: 100px;
+    height: 50px;
     background-color: rgba(255, 255, 255, 0.1);
     position: fixed;
-    overflow-x: hidden;
+    overflow: hidden;
+}
+
+#sumario:hover, #sumario:active {
+    height: 60vh;
+    max-height: 360px;
+    overflow-y: auto;
 }
 
 #navSumario {
     width: 8vw;
     min-width: 100px;
-    height: 310px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
     scrollbar-width: 20px;
+    /*visibility:hidden;*/
 }
 
 #navSumario a:link, #navSumario a:visited {
@@ -53,86 +61,6 @@ body {
 
 #sumario::-webkit-scrollbar-thumb, #navSumario::-webkit-scrollbar-thumb {
     background-color: gray;
-}
-
-/*---------------- Configurações do sumário para tamanhos diferentes de tela ----------------*/
-@media screen and (max-width: 600px) {
-    
-    #sumario {
-        margin-left: -7.5vw;
-    }
-
-}
-
-@media screen and (max-width: 486px) {
-    
-    #sumario {
-        margin-left: -10vw;
-    }
-
-}
-
-@media screen and (max-height: 450px) {
-    
-    #sumario {
-        margin-top: -1%;
-    }
-
-    #navSumario {
-        height: 70vh;
-    }
-
-}
-
-@media screen and (max-height: 300px) {
-    
-    #sumario {
-        margin-top: -3%;
-    }
-
-    #navSumario {
-        height: 60vh;
-    }
-
-}
-
-@media screen and (max-height: 194px) {
-    
-    #sumario {
-        margin-top: -4%;
-    }
-
-    #navSumario {
-        height: 40vh;
-    }
-
-}
-
-@media screen and (max-height: 130px) {
-    
-    #sumario {
-        margin-top: -5%;
-        overflow-y: scroll;
-    }
-
-    #navSumario {
-        overflow: unset;
-    }
-
-}
-
-@media screen and (max-height: 100px) {
-    
-    #sumario {
-        margin-top: -5%;
-        overflow-y: auto;
-        height: 50vh;
-    }
-
-    #navSumario {
-        overflow-y: unset;
-    }
-
 }
 
 /*---------------- Conteúdo do Sumário ----------------*/
@@ -154,21 +82,28 @@ body {
     background-color: rgba(255, 165, 0, 0.5);
 }
 
-/*---------------- Corpo do Documento ----------------*/
-#corpo {
-    margin-left: 25%;
+#listaSumario .itemSumario {
+    position: relative;
+    float: left;
 }
 
 /*---------------- Cabecalho do documento ----------------*/
 .cabecalho {
-    margin: auto;
     margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 
+#imagemTopo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 #logoCabecalho {
-    align-self: center;
-    width: 56%;
+    margin-left: auto;
+    width: 100%;
 }
 
 /*---------------- Conteúdo do Documento ----------------*/
@@ -205,8 +140,9 @@ body {
 
 /*---------------- Termo de Concordância ----------------*/
 .rodape {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
 }
 
 #rodapeT1 {
@@ -219,4 +155,13 @@ body {
     margin-top: 20px;
     margin-bottom: 40px;
     text-align: center;
+}
+
+/*---------------- Adapta tamanho da Tela ----------------*/
+@media screen and (max-width: 1200px) {
+    
+    .cabecalho, .conteudo, .rodape {
+        margin-left: 86px;
+    }
+
 }
