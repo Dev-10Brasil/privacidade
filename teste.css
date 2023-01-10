@@ -165,3 +165,11 @@ body {
     }
 
 }
+
+@media screen and (max-width: 400px) {
+    
+    #sumario {
+        margin-top: auto;
+    }
+
+}
