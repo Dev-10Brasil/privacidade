@@ -174,7 +174,7 @@ body {
 
 }
 
-@media screen and (max-height: 250px) {
+@media screen and (max-height: 300px) {
 
     #sumario {
         margin-top: auto;
