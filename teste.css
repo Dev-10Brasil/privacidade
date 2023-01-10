@@ -173,3 +173,11 @@ body {
     }
 
 }
+
+@media screen and (max-height: 250px) {
+
+    #sumario {
+        margin-top: auto;
+    }
+
+}
