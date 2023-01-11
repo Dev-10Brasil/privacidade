@@ -5,7 +5,7 @@
 
 /*---------------- Corpo da página ----------------*/
 body {
-    background-color: #e8ecec;
+    background-color: cornsilk;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -36,7 +36,7 @@ body {
     min-width: 120px;
     height: 8vh;
     min-height: 80px;
-    background-color: rgb(240, 240, 240);
+    background-color: cornsilk;
     display: block;
     position: fixed;
     overflow: hidden;
