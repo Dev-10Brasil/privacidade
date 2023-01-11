@@ -130,8 +130,10 @@ body {
 
 #imagemTopo {
     margin: auto;
-    padding-left: 40%;
-    padding-right: 40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 44%;
+    padding-right: 44%;
     border-bottom: 10px solid rgba(100, 100, 100, 0.3);
 }
 
