@@ -20,37 +20,41 @@ body {
 #containerSumario {
     height: 100vh;
     width: 20vw;
-    position: fixed;
+    margin-left: auto;
+    margin-right: -200px;
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
 }
 
 #sumario {
-    margin-top: 12vw;
-    margin-left: -8vw;
-    margin-right: auto;
+    margin-left: -18vw;
     padding-top: 4vh;
-    padding-left: 1.5vw;
+    padding-left: 1vw;
     padding-right: 1vw;
     border: 1px solid black;
     border-radius: 20px;
-    width: 8vw;
-    min-width: 100px;
+    width: 9vw;
+    min-width: 120px;
     height: 8vh;
     min-height: 80px;
     background-color: rgb(240, 240, 240);
+    display: block;
     position: fixed;
     overflow: hidden;
     transition: height 0.6s;
 }
 
 #sumario:hover{
-    height: 60vh;
+    height: 60vh;          /*Não está mostrando a altura total*/
     max-height: 360px;
-    transition-delay:0.1s;
+    transition-delay:0.1s;  /*Verificar*/
     overflow-y: auto;
 }
 
 #navSumario {
-    width: 8vw;
+    width: 98%;
     min-width: 100px;
     overflow: hidden;
     scrollbar-width: 20px;
@@ -80,15 +84,19 @@ body {
 
 .itemSumario {
     list-style: none;
-    width: 92%;
+    width: 100%;
     height: 50px;
     padding-top: 10px;
     border-top: 5px solid rgba(0, 0, 0, 0.3);
-    font-size: 18px;
+    font-size: 12px;
 }
 
 .itemSumario:hover {
     background-color: rgba(255, 165, 0, 0.5);
+}
+
+#item_capitulo2, #item_capitulo3 {
+    height: 75px;
 }
 
 #listaSumario .itemSumario {
@@ -178,26 +186,26 @@ body {
 }
 
 /*---------------- Adapta tamanho da Tela ----------------*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1220px) {
     
     .cabecalho, .conteudo, .rodape {
-        margin-left: 86px;
+        margin-left: 90px;
     }
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     
     #sumario {
-        margin-top: auto;
+        margin-left: -14vw;
     }
 
 }
 
-@media screen and (max-height: 300px) {
-
+@media screen and (max-width: 510px) {
+    
     #sumario {
-        margin-top: auto;
+        margin-left: -10vw;
     }
 
 }
