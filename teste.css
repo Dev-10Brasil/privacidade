@@ -5,7 +5,7 @@
 
 /*---------------- Corpo da página ----------------*/
 body {
-    background-color: #faffff;
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -132,15 +132,14 @@ body {
     margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 44%;
-    padding-right: 44%;
     border-bottom: 10px solid rgba(100, 100, 100, 0.3);
+    display: flex;
+    justify-content: center;
 }
 
 #logoCabecalho {
-    justify-content: center;
     width: 100%;
-    min-width: 150px;
+    max-width: 150px;
 }
 
 /*---------------- Conteúdo do Documento ----------------*/
@@ -207,6 +206,19 @@ body {
     
     #sumario {
         margin-left: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 440px) {
+    
+    #containerSumario {
+        display: none;
+    }
+
+    .cabecalho, .conteudo, .rodape {
+        margin-left: 4vw;
+        margin-right: 4vw;
     }
 
 }
