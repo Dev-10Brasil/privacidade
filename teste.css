@@ -5,9 +5,7 @@
 
 /*---------------- Corpo da página ----------------*/
 body {
-    padding-left: 10vw;
-    padding-right: 10vw;
-    background-color: rgb(240, 240, 240);
+    background-color: #e8ecec;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -20,7 +18,6 @@ body {
 #containerSumario {
     height: 100vh;
     width: 20vw;
-    margin-left: auto;
     margin-right: -200px;
     display: flex;
     float: left;
@@ -29,7 +26,7 @@ body {
 }
 
 #sumario {
-    margin-left: -18vw;
+    margin-left: 35px;
     padding-top: 4vh;
     padding-left: 1vw;
     padding-right: 1vw;
@@ -127,19 +124,21 @@ body {
 
 #imagemTopo {
     margin: auto;
-    padding-left: 45%;
-    padding-right: 45%;
+    padding-left: 40%;
+    padding-right: 40%;
     border-bottom: 10px solid rgba(100, 100, 100, 0.3);
 }
 
 #logoCabecalho {
-    margin: auto;
+    justify-content: center;
     width: 100%;
     min-width: 150px;
 }
 
 /*---------------- Conteúdo do Documento ----------------*/
 .conteudo {
+    padding-left: 10vw;
+    padding-right: 10vw;
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
@@ -189,7 +188,7 @@ body {
     text-align: center;
 }
 
-/*---------------- Adapta tamanho da Tela ----------------*/
+/*---------------- Adapta ao tamanho da Tela ----------------*/
 @media screen and (max-width: 1220px) {
     
     .cabecalho, .conteudo, .rodape {
@@ -198,18 +197,10 @@ body {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     
     #sumario {
-        margin-left: -14vw;
-    }
-
-}
-
-@media screen and (max-width: 510px) {
-    
-    #sumario {
-        margin-left: -10vw;
+        margin-left: 40px;
     }
 
 }
