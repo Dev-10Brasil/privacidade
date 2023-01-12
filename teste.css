@@ -189,14 +189,14 @@ body {
 @media screen and (max-width: 600px) {
     
     #conteudo, #cabecalho {
-        margin-left: 4vw;
+        margin-left: 40px;
     }
 
 }
 
 @media screen and (max-width: 440px) {
     
-    #containerSumario {
+    #sumario {
         display: none;
     }
 
