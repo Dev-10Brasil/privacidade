@@ -201,7 +201,28 @@ body {
 
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 450px) {
+    
+    #conteudo, #cabecalho {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #sumario {
+        display: none;
+    }
+
+}
+
+@media screen and (max-height: 480px) {
+    
+    #containerSumario {
+        margin-top: -50px;
+    }
+    
+}
+
+@media screen and (max-height: 320px) {
     
     #conteudo, #cabecalho {
         margin-left: auto;
