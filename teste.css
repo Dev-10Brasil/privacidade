@@ -183,10 +183,20 @@ body {
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     
     #conteudo, #cabecalho {
         margin-left: 40px;
+        margin-right: -60px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    
+    #conteudo, #cabecalho {
+        margin-left: 60px;
+        margin-right: -60px;
     }
 
 }
