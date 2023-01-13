@@ -112,14 +112,6 @@ body {
 
 }
 
-@media screen and (max-height: 480px) {
-    
-    #containerSumario {
-        margin-top: -50px;
-    }
-    
-}
-
 @media screen and (max-height: 320px) {
     
     #conteudo, #cabecalho {
