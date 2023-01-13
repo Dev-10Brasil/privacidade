@@ -17,15 +17,7 @@ body {
 /*---------------- Cabecalho do documento ----------------*/
 #cabecalho {
     margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
-}
-
-/*---------------- Conteúdo do Documento ----------------*/
-.conteudo {
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /*---------------- Sessões do Documento ----------------*/
@@ -54,12 +46,6 @@ body {
 }
 
 /*---------------- Termo de Concordância ----------------*/
-.rodape {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
-}
-
 #rodapeT1 {
     margin-top: 40px;
     margin-bottom: 20px;
@@ -72,6 +58,7 @@ body {
     text-align: center;
 }
 
+/*---------------- Adaptação ao tamanho da tela ----------------*/
 @media screen and (max-width: 1000px) {
     
     #conteudo, #cabecalho {
@@ -92,11 +79,6 @@ body {
 
 @media screen and (max-width: 450px) {
     
-    #conteudo, #cabecalho {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
     #sumario {
         display: none;
     }
@@ -104,11 +86,6 @@ body {
 }
 
 @media screen and (max-height: 320px) {
-    
-    #conteudo, #cabecalho {
-        margin-left: auto;
-        margin-right: auto;
-    }
     
     #sumario {
         display: none;
