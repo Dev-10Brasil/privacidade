@@ -14,12 +14,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/*---------------- Corpo do Documento ----------------*/
-#corpo {
-    padding-left: 10vw;
-    padding-right: 10vw;
-}
-
 /*---------------- Cabecalho do documento ----------------*/
 #cabecalho {
     margin-top: 40px;
