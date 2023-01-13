@@ -79,6 +79,11 @@ body {
 
 @media screen and (max-width: 450px) {
     
+    #conteudo, #cabecalho {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     #sumario {
         display: none;
     }
@@ -86,6 +91,12 @@ body {
 }
 
 @media screen and (max-height: 320px) {
+    
+    
+    #conteudo, #cabecalho {
+        margin-left: auto;
+        margin-right: auto;
+    }
     
     #sumario {
         display: none;
