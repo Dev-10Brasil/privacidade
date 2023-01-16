@@ -1,90 +1,74 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
 
-/*---------------- Corpo da página ----------------*/
-body {
-    background-color: #faffff;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    background-position-x: center;
-    color: rgba(0, 0, 0, 0.9);
-    font-family: 'Roboto', sans-serif;
+#imagemTopo {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 10px solid rgba(210, 210, 210, 0.9);
 }
 
-/*---------------- Cabecalho do documento ----------------*/
-#cabecalho {
+#logo {
+    width: 100%;
+    max-width: 150px;
+}
+
+#collapse {
     margin-top: 40px;
-    text-align: center;
 }
 
-/*---------------- Sessões do Documento ----------------*/
-#introducao {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: justify;
+#invisiCard {
+    padding: 0%;
 }
 
-.tituloCapitulo {
-    margin-top: 80px;
-    text-align: center;
-}
-
-.artigo {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-.inciso, .obrigacao {
-    margin-left: 10%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-/*---------------- Termo de Concordância ----------------*/
-#rodapeT1 {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-#rodapeT2 {
-    margin-top: 20px;
+#cabecalho,
+#rodape {
     margin-bottom: 40px;
     text-align: center;
 }
 
-/*---------------- Adaptação ao tamanho da tela ----------------*/
-@media screen and (max-width: 1000px) {
-    
-    #conteudo, #cabecalho {
-        margin-left: 40px;
-        margin-right: -60px;
-    }
-
+.capitulo { 
+    margin-top: 40px;
+    text-align: justify;
 }
 
-@media screen and (max-width: 550px) {
-    
-    #conteudo, #cabecalho {
+.tituloCapitulo {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#rodapeT1 {
+    margin-top: 60px;
+}
+
+#rodapeT2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.incisoContainer,
+.obrigacaoContainer {
+    margin-left: 40px;
+}
+
+@media screen and (max-width: 780px) {
+
+    #cabecalho, #introducao, .capitulo {
         margin-left: 60px;
-        margin-right: -60px;
     }
 
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 452px) {
     
-    #conteudo, #cabecalho {
-        margin-left: auto;
-        margin-right: auto;
+    #cabecalho, #introducao, .capitulo {
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
-    
-    #sumario {
+
+    #sumario, #vazioDireito {
         display: none;
     }
 
@@ -92,13 +76,12 @@ body {
 
 @media screen and (max-height: 320px) {
     
-    
-    #conteudo, #cabecalho {
-        margin-left: auto;
-        margin-right: auto;
+    #cabecalho, #introducao, .capitulo {
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
-    
-    #sumario {
+
+    #sumario, #vazioDireito {
         display: none;
     }
 
