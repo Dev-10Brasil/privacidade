@@ -87,23 +87,20 @@
 @media screen and (max-width: 900px) {
 
     #collapse {
-        margin-left: auto;
-    }
-    
-    #sumario {
-        margin-left: auto;
+        margin-left: -20px;
     }
 
-    #vazioDireito {
-        margin-left: -20vw;
+    #cabecalho, #introducao, .capitulo {
+        margin-left: 10vw;
+        margin-right: -20vw;
     }
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
     #cabecalho, #introducao, .capitulo {
-        margin-left: 14vw;
+        margin-left: 24vw;
     }
 
 }
