@@ -21,6 +21,7 @@
 }
 
 #sumario {
+    justify-content: center;
     margin-left: 5vw;
 }
 
@@ -69,20 +70,24 @@
 
 @media screen and (max-width: 1200px) {
 
+    #sumario {
+        margin-left: 4vw;
+    }
+
     #collapse {
         margin-left: -40px;
     }
 
     #cabecalho, #introducao, .capitulo {
         margin-left: 5vw;
-    }    
+    }
 
 }
 
 @media screen and (max-width: 900px) {
 
-    #collapse {
-        margin-left: -70px;
+    #sumario {
+        margin-left: auto;
     }
 
     #vazioDireito {
@@ -91,18 +96,10 @@
 
 }
 
-@media screen and (max-width: 620px) {
-
-    #collapse {
-        margin-left: -70px;
-    }
+@media screen and (max-width: 600px) {
 
     #cabecalho, #introducao, .capitulo {
-        margin-left: 12vw;
-    }
-
-    #vazioDireito {
-        display: none;
+        margin-left: 14vw;
     }
 
 }
