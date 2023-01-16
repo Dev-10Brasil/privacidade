@@ -91,7 +91,7 @@
     }
 
     #vazioDireito {
-        display: none;
+        margin-left: -20vw;
     }
 
 }
@@ -116,7 +116,7 @@
     }
 
     #vazioDireito {
-        display: inline;
+        margin: auto;
     }
 
 }
@@ -133,7 +133,7 @@
     }
 
     #vazioDireito {
-        display: inline;
+        margin: auto;
     }
 
 }
