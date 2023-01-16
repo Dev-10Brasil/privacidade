@@ -17,10 +17,16 @@
 
 #collapse {
     margin-top: 40px;
+    margin-left: -60px;
 }
 
 #sumario {
-    margin-left: 3vw;
+    margin-left: 5vw;
+}
+
+#cabecalho, #introducao, .capitulo {
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 #invisiCard {
@@ -61,19 +67,47 @@
     margin-left: 40px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1200px) {
 
-    #sumario {
-        margin-left: 2vw;
+    #collapse {
+        margin-left: -40px;
     }
 
     #cabecalho, #introducao, .capitulo {
-        margin-left: 60px;
+        margin-left: 5vw;
+    }    
+
+}
+
+@media screen and (max-width: 900px) {
+
+    #collapse {
+        margin-left: -70px;
+    }
+
+    #vazioDireito {
+        display: none;
     }
 
 }
 
-@media screen and (max-width: 452px) {
+@media screen and (max-width: 620px) {
+
+    #collapse {
+        margin-left: -70px;
+    }
+
+    #cabecalho, #introducao, .capitulo {
+        margin-left: 12vw;
+    }
+
+    #vazioDireito {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
     
     #cabecalho, #introducao, .capitulo {
         margin-left: -10vw;
@@ -82,6 +116,10 @@
 
     #sumario {
         display: none;
+    }
+
+    #vazioDireito {
+        display: inline;
     }
 
 }
@@ -95,6 +133,10 @@
 
     #sumario {
         display: none;
+    }
+
+    #vazioDireito {
+        display: inline;
     }
 
 }
