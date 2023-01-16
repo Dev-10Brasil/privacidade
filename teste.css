@@ -19,6 +19,10 @@
     margin-top: 40px;
 }
 
+#sumario {
+    margin-left: 3vw;
+}
+
 #invisiCard {
     padding: 0%;
 }
@@ -57,7 +61,11 @@
     margin-left: 40px;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 840px) {
+
+    #sumario {
+        margin-left: 2vw;
+    }
 
     #cabecalho, #introducao, .capitulo {
         margin-left: 60px;
